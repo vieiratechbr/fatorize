@@ -52,6 +52,7 @@
 
 .link1:hover {
   color: #193464;
+  transition: background-color 0.3s ease;
 }
 
 .link2 {
@@ -65,6 +66,7 @@
 
 .link2:hover {
   color: #193464;
+  transition: background-color 0.3s ease;
 }
 
 .link3 {
@@ -78,6 +80,7 @@
 
 .link3:hover {
   color: #193464;
+  transition: background-color 0.3s ease;
 }
 
 .link4 {
@@ -90,8 +93,119 @@
 }
 
 .link4:hover {
-  color: #193464;
+  color: #7a5b06;
+  transition: background-color 0.3s ease;
 }
+
+
+.calculos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.calculos h2 {
+    display: flex;
+    justify-content: left;
+    font-size: 22px;
+    font-family: Montserrat, sans-serif;
+    margin-left: 14px;
+    margin-top: 7px;
+    font-weight: 600;
+}
+
+.calculos input {
+    margin-left: 14px;
+    margin-top: 12px;
+    border-radius: 4px;
+    border: 1px solid #b6b6b6;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    width: 90%;
+    height: 25px;
+}
+
+
+.inteiros button {
+    margin-left: 14px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    border: 1px solid #b6b6b6;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    width: 90%;
+    height: 25px;
+    background-color: #6397F8;
+    color: white;
+    cursor: pointer;
+}
+
+
+.primos button {
+    margin-left: 14px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    border: 1px solid #b6b6b6;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    width: 90%;
+    height: 25px;
+    background-color: #6397F8;
+    color: white;
+    cursor: pointer;
+}
+
+.polinômios button {
+    margin-left: 14px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    border: 1px solid #b6b6b6;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    width: 90%;
+    height: 25px;
+    background-color: #ff9100;
+    color: white;
+    cursor: pointer;
+}
+
+.calculos button:hover {
+    background-color: #078f1d;
+    transition: background-color 0.3s ease;
+}
+
+.inteiros {
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #b6b6b6;
+    border-radius: 8px;
+}
+
+.primos {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #b6b6b6;
+    border-radius: 8px;
+}
+
+
+.polinômios {
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #b6b6b6;
+    border-radius: 8px;
+}
+        
 
 /* From Uiverse.io by anand_4957 */ 
 .book,
@@ -176,7 +290,6 @@
     --fg: hsl(223, 10%, 90%);
   }
 }
-
 @keyframes cover {
   from,
   5%,
