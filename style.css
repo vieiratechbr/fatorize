@@ -52,7 +52,7 @@
 
 .link1:hover {
   color: #193464;
-  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .link2 {
@@ -66,7 +66,7 @@
 
 .link2:hover {
   color: #193464;
-  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .link3 {
@@ -80,7 +80,7 @@
 
 .link3:hover {
   color: #193464;
-  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .link4 {
@@ -94,7 +94,7 @@
 
 .link4:hover {
   color: #7a5b06;
-  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 
