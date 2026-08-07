@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+    background-color: #6397F8;
+    height: 80px;
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+}
+
+.logo {
+    margin-left: 15px;
+    color: white;
+    text-align: left;
+    font-size: 32   px;
+    font-family: Montserrat, sans-serif;
+    align-items: center;
+}
+
+.tagline {
+    margin-left: 2px;
+    color: white;
+    text-align: left;
+    font-size: 14px;
+    font-family: Montserrat, sans-serif;
+    align-items: center;
+}
