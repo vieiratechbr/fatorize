@@ -26,18 +26,26 @@
 
 <div class="calculos">
     <div class="inteiros">
-        <h2>Números Inteiros</h2>
+        <h2><img src="cubes.png" alt="Ícone de Números Inteiros"> Números Inteiros</h2>
         <input type="text" id="input-inteiros" placeholder="Digite um número inteiro">
         <button id="calcular-inteiros">Fatorar Número</button>
     </div>
     <div class="primos">
-        <h2>Números Primos</h2>
+        <h2><img src="cubes.png" alt="Ícone de Números Primos">Números Primos</h2>
         <input type="text" id="input-primos" placeholder="Digite um número primo">
         <button id="calcular-primos">Fatorar Número</button>
     </div>
     <div class="polinômios">
-        <h2>Polinômios</h2>
+        <h2><img src="polynomial.png" alt="Ícone de Polinômios">Polinômios</h2>
         <input type="text" id="input-polinomios" placeholder="Digite um polinômio">
+        <div class="teclado-atalhos">
+            <button type="button" onclick="inserirSimbolo('x')">x</button>
+            <button type="button" onclick="inserirSimbolo('^')">^</button>
+            <button type="button" onclick="inserirSimbolo('+')">+</button>
+            <button type="button" onclick="inserirSimbolo('-')">-</button>
+            <button type="button" onclick="inserirSimbolo('(')">(</button>
+            <button type="button" onclick="inserirSimbolo(')')">)</button>
+        </div>
         <button id="calcular-polinomios">Fatorar Polinômio</button>
     </div>
 </div>

@@ -107,12 +107,13 @@
 
 .calculos h2 {
     display: flex;
-    justify-content: left;
+    align-items: center;    
+    gap: 10px;              
     font-size: 22px;
     font-family: Montserrat, sans-serif;
-    margin-left: 14px;
-    margin-top: 7px;
     font-weight: 600;
+    padding: 14px 14px 0 14px; 
+    margin: 0;
 }
 
 .calculos input {
@@ -136,7 +137,7 @@
     font-size: 14px;
     font-family: Montserrat, sans-serif;
     width: 90%;
-    height: 25px;
+    height: 32px;
     background-color: #6397F8;
     color: white;
     cursor: pointer;
@@ -152,13 +153,13 @@
     font-size: 14px;
     font-family: Montserrat, sans-serif;
     width: 90%;
-    height: 25px;
+    height: 32px;
     background-color: #6397F8;
     color: white;
     cursor: pointer;
 }
 
-.polinômios button {
+.polinômios button#calcular-polinomios {
     margin-left: 14px;
     margin-top: 12px;
     margin-bottom: 12px;
@@ -167,15 +168,10 @@
     font-size: 14px;
     font-family: Montserrat, sans-serif;
     width: 90%;
-    height: 25px;
+    height: 32px;
     background-color: #ff9100;
     color: white;
     cursor: pointer;
-}
-
-.calculos button:hover {
-    background-color: #078f1d;
-    transition: background-color 0.3s ease;
 }
 
 .inteiros {
@@ -187,6 +183,13 @@
     border-radius: 8px;
 }
 
+.inteiros img {
+    width: 32px;            
+    height: auto;
+    margin: 0;              
+    display: block;
+}
+
 .primos {
     grid-row: span 2 / span 2;
     grid-column-start: 3;
@@ -196,6 +199,12 @@
     border-radius: 8px;
 }
 
+.primos img {
+    width: 32px;            
+    height: auto;
+    margin: 0;              
+    display: block;
+}
 
 .polinômios {
     grid-row: span 2 / span 2;
@@ -205,6 +214,39 @@
     border: 1px solid #b6b6b6;
     border-radius: 8px;
 }
+
+.polinômios img {
+    width: 32px;            
+    height: auto;
+    margin: 0;              
+    display: block;
+}
+
+.teclado-atalhos {
+    display: flex;
+    gap: 6px;
+    margin-left: 14px;
+    margin-top: 8px;
+    width: 90%;
+}
+
+.teclado-atalhos button {
+    flex: 1;
+    height: 28px;
+    background-color: #e2e8f0;
+    color: #1e293b;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 !important; 
+}
+
+.teclado-atalhos button:hover {
+    background-color: #cbd5e1;
+}
+
         
 
 /* From Uiverse.io by anand_4957 */ 

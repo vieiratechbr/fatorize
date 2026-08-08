@@ -18,3 +18,11 @@ function esconderLoader() {
     book.classList.add('hidden');
   }
 }
+
+function inserirSimbolo(simbolo) {
+    const input = document.getElementById('input-polinomios');
+
+    input.value += simbolo;
+    
+    input.focus();
+}
