@@ -5,7 +5,13 @@
 }
 
 body {
-  padding-bottom: 140px; /* Espaço para o footer fixo não cobrir o conteúdo */
+  padding-bottom: 140px;
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+body.fade-out {
+  opacity: 0;
 }
 
 .header {
@@ -360,7 +366,6 @@ body {
   visibility: hidden;
 }
 
-/* Footer Fixo na Base */
 .footer {
   position: fixed;
   bottom: 0;
@@ -416,6 +421,67 @@ body {
   font-size: 12px;
   color: #64748b;
   margin: 0;
+}
+
+.conteudo-tutorial {
+  width: 100%;
+  max-width: 830px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border: 1px solid #b6b6b6;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: Montserrat, sans-serif;
+  color: #1e293b;
+}
+
+.conteudo-tutorial h2 {
+  text-align: center;
+  color: #0f4c81;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.conteudo-tutorial .intro {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  color: #475569;
+}
+
+.tutorial-sessao {
+  margin-bottom: 30px;
+  background-color: #f8fafc;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #6397F8;
+}
+
+.tutorial-sessao h3 {
+  font-size: 18px;
+  color: #1e293b;
+  margin-bottom: 15px;
+}
+
+.tutorial-sessao ol, .tutorial-sessao ul {
+  margin-left: 25px;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.tutorial-sessao li {
+  margin-bottom: 10px;
+}
+
+.tutorial-sessao ul {
+  list-style-type: disc;
+  margin-top: 10px;
+}
+
+.tutorial-sessao strong {
+  color: #0f4c81;
 }
 
 /* From Uiverse.io by anand_4957 */ 

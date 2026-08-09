@@ -162,3 +162,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const linksMenu = document.querySelectorAll('.menu a');
+
+  linksMenu.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const destino = link.getAttribute('href');
+
+      // Se o link for uma âncora interna (ex: #como-usar), não aplica a transição de página
+      if (destino.startsWith('#')) return;
+
+      e.preventDefault(); // Impede o redirecionamento imediato
+
+      // Adiciona a classe que deixa a página transparente
+      document.body.classList.add('fade-out');
+
+      // Espera a animação acabar (400ms) e troca de página
+      setTimeout(() => {
+        window.location.href = destino;
+      }, 400);
+    });
+  });
+});
