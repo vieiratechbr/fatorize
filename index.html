@@ -10,6 +10,18 @@
   <title>Fatorize</title>
 </head>
 <body>
+
+  <div id="loader-overlay" class="loader-overlay hidden">
+    <div class="book" id="book">
+      <div class="book__pg-shadow"></div>
+      <div class="book__pg"></div>
+      <div class="book__pg book__pg--2"></div>
+      <div class="book__pg book__pg--3"></div>
+      <div class="book__pg book__pg--4"></div>
+      <div class="book__pg book__pg--5"></div>
+    </div>
+  </div>
+
   <header class="header">
     <div class="logo-group">
       <span class="simbolo-raiz">√</span>
@@ -24,16 +36,11 @@
     </nav>
   </header>
 
-<div class="calculos">
+  <div class="calculos">
     <div class="inteiros">
         <h2><img src="cubes.png" alt="Ícone de Números Inteiros"> Números Inteiros</h2>
         <input type="text" id="input-inteiros" placeholder="Digite um número inteiro">
         <button id="calcular-inteiros">Fatorar Número</button>
-    </div>
-    <div class="primos">
-        <h2><img src="cubes.png" alt="Ícone de Números Primos">Números Primos</h2>
-        <input type="text" id="input-primos" placeholder="Digite um número primo">
-        <button id="calcular-primos">Fatorar Número</button>
     </div>
     <div class="polinômios">
         <h2><img src="polynomial.png" alt="Ícone de Polinômios">Polinômios</h2>
@@ -48,25 +55,18 @@
         </div>
         <button id="calcular-polinomios">Fatorar Polinômio</button>
     </div>
-</div>
-
-<div class="resultados">
-    <div class="resultadobox"><h2>Resultado</h2></div>
-</div>
-    
-    
-
-  <div class="book" id="book">
-    <div class="book__pg-shadow"></div>
-    <div class="book__pg"></div>
-    <div class="book__pg book__pg--2"></div>
-    <div class="book__pg book__pg--3"></div>
-    <div class="book__pg book__pg--4"></div>
-    <div class="book__pg book__pg--5"></div>
   </div>
 
+  <div class="resultados">
+    <div class="resultadobox"><h2>Resultado</h2></div>
+  </div>
+  
   <footer class="footer">
-    <p>2024 Fatorize. Todos os direitos reservados.</p>
+    <div class="github-box">
+      <p>Gostou do projeto? Avalie no GitHub!</p>
+      <a href="https://github.com/vieiratechbr/fatorize" target="_blank" class="github-btn">⭐ Star no GitHub</a>
+    </div>
+    <p class="copyright">© 2026 Fatorize. Todos os direitos reservados.</p>
   </footer>
 
   <script src="script.js"></script>

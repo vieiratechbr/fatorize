@@ -1,17 +1,17 @@
-// Oculta e exibe o loader
+// Oculta e exibe o loader com efeito blur
 window.addEventListener('load', () => {
-  const book = document.getElementById('book');
-  if (book) book.classList.add('hidden');
+  const overlay = document.getElementById('loader-overlay');
+  if (overlay) overlay.classList.add('hidden');
 });
 
 function mostrarLoader() {
-  const book = document.getElementById('book');
-  if (book) book.classList.remove('hidden');
+  const overlay = document.getElementById('loader-overlay');
+  if (overlay) overlay.classList.remove('hidden');
 }
 
 function esconderLoader() {
-  const book = document.getElementById('book');
-  if (book) book.classList.add('hidden');
+  const overlay = document.getElementById('loader-overlay');
+  if (overlay) overlay.classList.add('hidden');
 }
 
 // Insere símbolos no input de Polinômios
@@ -34,9 +34,10 @@ function eNumeroPrimo(n) {
   return true;
 }
 
-// Funções de Fatoração
+// Funções de Cálculo e Fatoração
 function fatorarNumeroInteiro(num) {
   if (isNaN(num) || num <= 1) return null;
+
   let n = num;
   const fatores = [];
   let divisor = 2;
@@ -58,6 +59,7 @@ function fatorarNumeroInteiro(num) {
 // Formata o resultado em potência (ex: 2² × 3 × 5)
 function formatarExponencial(fatores) {
   const mapaSuperscript = { '0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴', '5': '⁵', '6': '⁶', '7': '⁷', '8': '⁸', '9': '⁹' };
+  
   return fatores.map(item => {
     if (item.quantidade === 1) return `${item.primo}`;
     const expStr = item.quantidade.toString().split('').map(d => mapaSuperscript[d]).join('');
@@ -65,7 +67,7 @@ function formatarExponencial(fatores) {
   }).join(' × ');
 }
 
-// Gera a tabela de decomposição vertical
+// Gera a tabela de decomposição vertical (passo a passo)
 function gerarPassoAPasso(num) {
   let n = num;
   let divisor = 2;
@@ -83,7 +85,7 @@ function gerarPassoAPasso(num) {
   return html;
 }
 
-// Renderiza a interface de Resultado estilo Protótipo
+// Renderiza a interface de Resultado no DOM
 function exibirResultado(inputVal, formaFatorada, passoHTML, mensagemEspecial = null) {
   const resultadobox = document.querySelector('.resultadobox');
   if (resultadobox) {
@@ -113,10 +115,10 @@ function exibirResultado(inputVal, formaFatorada, passoHTML, mensagemEspecial = 
   }
 }
 
-// Event Listeners dos Botões
+// Event Listeners dos Botões de Ação
 document.addEventListener('DOMContentLoaded', () => {
   
-  // 1. Botão Inteiros
+  // 1. Botão Inteiros (Com detecção automática de Primos)
   const btnInteiros = document.getElementById('calcular-inteiros');
   if (btnInteiros) {
     btnInteiros.addEventListener('click', () => {
@@ -127,41 +129,23 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       mostrarLoader();
       setTimeout(() => {
+        // Verifica se é primo
+        const ePrimo = eNumeroPrimo(val);
+        
         const fatores = fatorarNumeroInteiro(val);
-        const formatado = formatarExponencial(fatores);
+        const formatado = ePrimo ? `${val}¹` : formatarExponencial(fatores);
         const passos = gerarPassoAPasso(val);
-        exibirResultado(val, formatado, passos);
+        
+        // Se for primo, cria a mensagem especial verde, senão passa null
+        const mensagemEspecial = ePrimo ? `✓ ${val} é um Número Primo!` : null;
+        
+        exibirResultado(val, formatado, passos, mensagemEspecial);
         esconderLoader();
       }, 300);
     });
   }
 
-  // 2. Botão Primos (Com Validação Restritiva)
-  const btnPrimos = document.getElementById('calcular-primos');
-  if (btnPrimos) {
-    btnPrimos.addEventListener('click', () => {
-      const val = parseInt(document.getElementById('input-primos').value);
-      if (!val || val <= 1) {
-        alert('Insira um número válido.');
-        return;
-      }
-
-      // Validação: Aceita APENAS números primos
-      if (!eNumeroPrimo(val)) {
-        alert(`O número ${val} NÃO é primo! Esta aba aceita apenas números primos.`);
-        return;
-      }
-
-      mostrarLoader();
-      setTimeout(() => {
-        const passos = gerarPassoAPasso(val);
-        exibirResultado(val, `${val}¹`, passos, `✓ ${val} é um Número Primo!`);
-        esconderLoader();
-      }, 300);
-    });
-  }
-
-  // 3. Botão Polinômios
+  // 2. Botão Polinômios (Exemplo Estrutural/Placeholder)
   const btnPolinomios = document.getElementById('calcular-polinomios');
   if (btnPolinomios) {
     btnPolinomios.addEventListener('click', () => {
