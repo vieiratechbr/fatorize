@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  padding-bottom: 140px; /* Espaço para o footer fixo não cobrir o conteúdo */
+}
+
 .header {
   display: flex;
   justify-content: space-between; 
@@ -12,7 +16,6 @@
   background-color: #6397F8;  
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
 }
-
 
 .logo-group {
   display: flex;
@@ -98,7 +101,6 @@
   transition: color 0.3s ease;
 }
 
-
 .calculos {
     display: flex;
     justify-content: center;
@@ -128,7 +130,6 @@
     width: 90%;
     height: 25px;
 }
-
 
 .inteiros button {
     margin-left: 14px;
@@ -175,7 +176,6 @@
     margin: 0;              
     display: block;
 }
-
 
 .polinômios {
     width: 100%;
@@ -346,7 +346,7 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(8px); /* Efeito de desfoque no fundo */
+  backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   display: flex;
   justify-content: center;
@@ -360,30 +360,37 @@
   visibility: hidden;
 }
 
+/* Footer Fixo na Base */
 .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 380px;
-  padding: 30px;
+  padding: 15px 30px;
   background-color: #f8fafc;
   border-top: 1px solid #e2e8f0;
+  z-index: 1000;
+  box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
 .github-box {
   background-color: #ffffff;
   border: 1px solid #cbd5e1;
-  border-radius: 8px;
-  padding: 20px 30px;
+  border-radius: 6px;
+  padding: 8px 20px;
   text-align: center;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 8px;
 }
 
 .github-box p {
-  margin: 0 0 15px 0;
+  margin: 0 0 6px 0;
   font-family: Montserrat, sans-serif;
   font-weight: 600;
+  font-size: 13px;
   color: #1e293b;
 }
 
@@ -392,11 +399,11 @@
   background-color: #24292e;
   color: #ffffff;
   text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 6px;
+  padding: 6px 14px;
+  border-radius: 4px;
   font-family: Montserrat, sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   transition: background-color 0.2s ease;
 }
 
@@ -406,10 +413,10 @@
 
 .copyright {
   font-family: Montserrat, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: #64748b;
+  margin: 0;
 }
-        
 
 /* From Uiverse.io by anand_4957 */ 
 .book,
@@ -418,11 +425,11 @@
   animation: cover 5s ease-in-out infinite;
 }
 .book {
-  background-color: hsl(268, 90%, 65%);
+  background-color: hsl(212, 90%, 65%);
   border-radius: 0.25em;
   box-shadow:
     0 0.25em 0.5em hsla(0, 0%, 0%, 0.3),
-    0 0 0 0.25em hsl(278, 100%, 57%) inset;
+    0 0 0 0.25em hsl(214, 100%, 57%) inset;
   padding: 0.25em;
   perspective: 37.5em;
   position: relative;
@@ -502,14 +509,14 @@
   95%,
   to {
     animation-timing-function: ease-out;
-    background-color: hsl(278, 84%, 67%);
+    background-color: hsl(212, 90%, 65%);
   }
   10%,
   40%,
   60%,
   90% {
     animation-timing-function: ease-in;
-    background-color: hsl(271, 90%, 45%);
+    background-color: hsl(212, 90%, 65%);
   }
 }
 @keyframes shadow {
