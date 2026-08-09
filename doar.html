@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Doar - Fatorize</title>
+</head>
+<body>
+  
+  <div id="loader-overlay" class="loader-overlay hidden">
+    <div class="book" id="book">
+      <div class="book__pg-shadow"></div>
+      <div class="book__pg"></div>
+      <div class="book__pg book__pg--2"></div>
+      <div class="book__pg book__pg--3"></div>
+      <div class="book__pg book__pg--4"></div>
+      <div class="book__pg book__pg--5"></div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="logo-group">
+      <span class="simbolo-raiz">√</span>
+      <h1 class="logo-texto">Fatorize</h1>
+      <span class="subtitulo">Sua calculadora de fatores</span>
+    </div>
+    <nav class="menu">
+      <a href="index.html" class="link1">CALCULAR</a>
+      <a href="comousar.html" class="link2">COMO USAR</a>
+      <a href="suporte.html" class="link3">SUPORTE</a>
+    </nav>
+  </header>
+
+  <main class="conteudo-doar">
+    <h2>Apoie o Fatorize ❤️</h2>
+    <p class="intro">O Fatorize é um projeto de código aberto, totalmente gratuito e sem anúncios. Se essa ferramenta te ajudou nos estudos ou no trabalho, considere fazer uma doação para nos ajudar a manter os servidores no ar!</p>
+
+    <div class="opcoes-doacao">
+      
+      <div class="card-doacao card-pix">
+        <h3>Doação via PIX</h3>
+        <p>A forma mais rápida e direta de apoiar. Qualquer valor é muito bem-vindo!</p>
+        
+        <div class="pix-area">
+          <span class="chave-pix-label">Chave PIX (E-mail):</span>
+          <code class="chave-pix">nathanmoura2k23@outlook.com</code>
+          <button class="btn-copiar-pix" onclick="navigator.clipboard.writeText('nathanmoura2k23@outlook.com'); alert('Chave PIX copiada!')">Copiar Chave</button>
+        </div>
+      </div>
+
+      <div class="card-doacao card-alt">
+        <h3>Outras Formas de Apoio</h3>
+        <p>Prefere usar cartão de crédito, PayPal ou apoiar mensalmente? Você pode nos encontrar nas plataformas abaixo:</p>
+        
+        <div class="alt-buttons">
+          <a href="https://apoia.se/fatorize" class="btn-apoia-se" onclick="alert('Redirecionando para a plataforma...')">Apoia.se</a>
+          <a href="https://www.buymeacoffee.com/vieiratechbr" class="btn-coffee" onclick="alert('Redirecionando para a plataforma...')">Buy Me a Coffee ☕</a>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="github-box">
+      <p>Gostou do projeto? Avalie no GitHub!</p>
+      <a href="https://github.com/vieiratechbr/fatorize" target="_blank" class="github-btn">⭐ Star no GitHub</a>
+    </div>
+    <p class="copyright">© 2026 Fatorize. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
