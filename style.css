@@ -9,7 +9,8 @@
   justify-content: space-between; 
   align-items: center;            
   padding: 15px 30px;
-  background-color: #6397F8;      
+  background-color: #6397F8;  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
 }
 
 
@@ -247,6 +248,126 @@
     background-color: #cbd5e1;
 }
 
+.resultados {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: -170px;
+  padding: 0 20px;
+}
+
+.resultadobox {
+  width: 100%;
+  max-width: 61%;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid #6397F8;
+  border-radius: 12px;
+  background-color: #6397f879;
+  font-family: Montserrat, sans-serif;
+}
+
+.resultado-titulo {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: Montserrat, sans-serif;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card-resultado {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.label-info {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+.sub-label {
+  font-size: 12px;
+  color: #666;
+  margin: 2px 0 10px 0;
+}
+
+.valor-info {
+  font-size: 18px;
+  color: #2b2b2b;
+  margin: 4px 0 0 0;
+}
+
+.valor-fatorado {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0f4c81;
+  margin: 6px 0 0 0;
+}
+
+.alerta-primo {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0d7a5f;
+  margin-top: 8px;
+}
+
+.acoes-card {
+  margin-top: auto;
+  padding-top: 15px;
+}
+
+.btn-copiar {
+  background-color: #0f4c81;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-copiar:hover {
+  background-color: #0a3357;
+}
+
+.box-passos {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.tabela-fatoracao {
+  border-collapse: collapse;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.tabela-fatoracao td.num {
+  padding-right: 12px;
+  text-align: right;
+  color: #2b2b2b;
+}
+
+.tabela-fatoracao td.div {
+  padding-left: 12px;
+  border-left: 2px solid #333;
+  text-align: left;
+  color: #0f4c81;
+}
         
 
 /* From Uiverse.io by anand_4957 */ 
