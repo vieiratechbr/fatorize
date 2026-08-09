@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Suporte - Fatorize</title>
+</head>
+<body>
+  
+  <div id="loader-overlay" class="loader-overlay hidden">
+    <div class="book" id="book">
+      <div class="book__pg-shadow"></div>
+      <div class="book__pg"></div>
+      <div class="book__pg book__pg--2"></div>
+      <div class="book__pg book__pg--3"></div>
+      <div class="book__pg book__pg--4"></div>
+      <div class="book__pg book__pg--5"></div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="logo-group">
+      <span class="simbolo-raiz">√</span>
+      <h1 class="logo-texto">Fatorize</h1>
+      <span class="subtitulo">Sua calculadora de fatores</span>
+    </div>
+    <nav class="menu">
+      <a href="index.html" class="link1">CALCULAR</a>
+      <a href="comousar.html" class="link2">COMO USAR</a>
+      <a href="#doar" class="link4">DOAR</a>
+    </nav>
+  </header>
+
+  <main class="conteudo-suporte">
+    <h2>Suporte e Contato</h2>
+    <p class="intro">Encontrou algum problema, tem alguma sugestão ou precisa de ajuda? Preencha o formulário abaixo e entraremos em contato.</p>
+
+    <div class="suporte-container">
+      
+      <form class="formulario-contato">
+        <div class="input-group">
+          <label for="nome">Nome Completo</label>
+          <input type="text" id="nome" placeholder="Digite seu nome" required>
+        </div>
+        <div class="input-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+        </div>
+        <div class="input-group">
+          <label for="mensagem">Como podemos ajudar?</label>
+          <textarea id="mensagem" rows="5" placeholder="Descreva sua dúvida ou problema..." required></textarea>
+        </div>
+        <button type="button" class="btn-enviar" onclick="alert('Obrigado pelo contato! Sua mensagem foi enviada com sucesso.')">Enviar Mensagem</button>
+      </form>
+
+      <div class="faq-box">
+        <h3>Dúvidas Frequentes (FAQ)</h3>
+        
+        <div class="faq-item">
+          <strong>O Fatorize é totalmente gratuito?</strong>
+          <p>Sim! Todas as ferramentas da nossa calculadora são disponibilizadas gratuitamente.</p>
+        </div>
+        
+        <div class="faq-item">
+          <strong>Preciso de internet para calcular?</strong>
+          <p>Apenas para acessar o site inicialmente. Como todos os cálculos rodam diretamente no seu navegador, a fatoração funciona sem atrasos mesmo se sua conexão cair.</p>
+        </div>
+        
+        <div class="faq-item">
+          <strong>Os cálculos têm um limite de tamanho?</strong>
+          <p>Para garantir a estabilidade do seu navegador, números excessivamente grandes ou polinômios complexos demais podem levar alguns milissegundos extras para serem decompostos.</p>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="github-box">
+      <p>Gostou do projeto? Avalie no GitHub!</p>
+      <a href="https://github.com/vieiratechbr/fatorize" target="_blank" class="github-btn">⭐ Star no GitHub</a>
+    </div>
+    <p class="copyright">© 2026 Fatorize. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

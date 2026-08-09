@@ -484,6 +484,131 @@ body.fade-out {
   color: #0f4c81;
 }
 
+.conteudo-suporte {
+  width: 100%;
+  max-width: 830px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border: 1px solid #b6b6b6;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: Montserrat, sans-serif;
+  color: #1e293b;
+}
+
+.conteudo-suporte h2 {
+  text-align: center;
+  color: #0f4c81;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.conteudo-suporte .intro {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 35px;
+  color: #475569;
+}
+
+.suporte-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap; /* Faz o layout adaptar em telas menores */
+}
+
+/* Área do Formulário */
+.formulario-contato {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-group label {
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+}
+
+.input-group input, 
+.input-group textarea {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  background-color: #f8fafc;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+  border-color: #6397F8;
+}
+
+.btn-enviar {
+  background-color: #ff9100;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.btn-enviar:hover {
+  background-color: #e68200;
+}
+
+/* Área de FAQ */
+.faq-box {
+  flex: 1;
+  min-width: 300px;
+  background-color: #f8fafc;
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 4px solid #ff9100;
+}
+
+.faq-box h3 {
+  font-size: 18px;
+  color: #0f4c81;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq-item strong {
+  display: block;
+  font-size: 14px;
+  color: #1e293b;
+  margin-bottom: 6px;
+}
+
+.faq-item p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #64748b;
+}
+
 /* From Uiverse.io by anand_4957 */ 
 .book,
 .book__pg-shadow,
